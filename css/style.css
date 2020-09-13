@@ -116,6 +116,45 @@ li a:hover {
 
 /* Navegación */
 
+
+/* Mobile-menu */
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        display: block;
+    }
+}
+
+.barra {
+    overflow: hidden;
+}
+
+.mobile-menu {
+    color: #FFFFFF;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 767px) {
+    .navegacion-principal {
+        max-height: 0;
+        transition: 1s;
+    }
+}
+
+#nav:target {
+    max-height: 80rem;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu,
+    .cerrar {
+        display: none!important;
+    }
+}
+
 .barra {
     background: #DB008D;
     padding: 1rem 0;
